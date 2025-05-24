@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 1 Form</title>
+  <style>
+  
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+
+    input, select, textarea {
+      padding: 8px;
+      margin-top: 4px;
+      width: 300px;
+      max-width: 100%;
+    }
+
+
+    input[type="submit"], input[type="reset"] {
+      width: auto;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+
+
+    input[type="submit"]:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+
+
+    input[type="reset"]:hover {
+      background-color: #f44336;
+      color: white;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+
+    <label for="fav-number">Fav number:</label>
+    <input type="number" id="fav-number" name="fav_number" placeholder="Enter your favorite number" required />
+
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male" style="display: inline;">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required />
+    <label for="female" style="display: inline;">Female</label>
+
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="usa">USA</option>
+      <option value="az">Azərbaycan</option>
+      <option value="uk">Türkiye</option>
+    </select>
+
+
+
+  
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="30"></textarea>
+
+
+
+    <label>
+      <input type="checkbox" id="subscribe" name="subscribe" />
+      Subscribe to newsletter
+    </label>
+
+
+
+    <label for="file">Upload file:</label>
+    <input type="file" id="file" name="file" />
+
+
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required />
+
+
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="favorite_color" />
+
+
+
+    <label for="website">Personal Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com" />
+
+
+    
+    <br /><br />
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+  </form>
+</body>
+</html>
